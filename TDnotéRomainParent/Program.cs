@@ -60,14 +60,11 @@ if (sexeValeur == 1 || age > 20)
 {
     Console.WriteLine("Cet Oxien paie l'impot ");
 }
-if (sexeValeur == 1 || age > 20)
+if (sexeValeur == 3 || age > 35)
 {
     Console.WriteLine("Cet Oxien paie l'impot ");
 }
-if (sexeValeur == 1 || age > 20)
-{
-    Console.WriteLine("Cet Oxien paie l'impot ");
-}
+
 
 else
 {
