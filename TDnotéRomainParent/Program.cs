@@ -2,9 +2,11 @@
 int saisieSexes()
 {
     string sexeSaisie ;
+
     do
     {
-       // récupération de la saisie de l'utilisateur
+        // récupération de la saisie de l'utilisateur
+        Console.WriteLine("Saisissez votre sexe au format Sk/Yo/Hu ");
         sexeSaisie = Console.ReadLine();
 
         // controle de saisie 
@@ -20,5 +22,28 @@ int saisieSexes()
     if (sexeSaisie == "Hu") return 2;
     return 3;
 }
+
+int saisieAge()
+{
+    int saisieAge;
+
+        Console.WriteLine("Saisissez un age ");
+        saisieAge = Convert.ToInt32(Console.ReadLine());
+    // controle des saisie positives  
+     if (saisieAge < 0)
+        throw new ArgumentException("Age invalide car inférieure à zéro");
+
+
+    
+
+   return saisieAge;
+
+}
+
+
+
+
+
+
 
 
